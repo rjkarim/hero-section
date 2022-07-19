@@ -1,0 +1,147 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E1E;
+
+}
+
+.card{
+    width: 1056px;
+    height: 636px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.text-part{
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    background: #1e1d38;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-upper-part h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.insight-color{
+    color: #AA5CDB
+    ;
+}
+
+.text-bottom-part{
+    display: flex;
+    gap: 30px;
+
+}
+
+.text-bottom-part h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+
+.text-bottom-part p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.image-part{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    opacity: 0.25;
+    position:absolute;
+    z-index: 1;
+}
+
+.image-part img{
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* ----------------------
+    Responsve Design 
+------------------------- */
+
+@media only screen and (max-width: 1399.98px) {
+    .card{
+    width: 1056px;}
+    
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .card{
+    width: 1056px;}
+    
+}
+
+@media only screen and (max-width: 991.98px) {
+    .card{
+    width: 80%;}
+    
+}
+
+@media only screen and (max-width: 767.98px) {
+    .card{
+    width: 80%;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    }
+    .text-part{
+        width: 100%;
+    }
+
+    .image-part{
+        width: 100%;
+    }
+
+    
+}
+@media only screen and (max-width: 575.98px) {
+    .card{
+    width: 80%;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    }
+    .text-part{
+        width: 100%;
+    }
+
+    .image-part{
+        width: 100%;
+    }
+
+    
+}
+
+
+
+
